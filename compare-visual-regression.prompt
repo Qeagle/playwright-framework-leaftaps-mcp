@@ -1,0 +1,64 @@
+Compare the baseline View Lead screenshot with the latest actual View Lead screenshot and generate a visual regression report using the compare-visual-regression.md guidelines.
+
+Strictly ignore trivial differences:
+
+   Minor color or font rendering changes (including anti-aliasing)
+   Pixel-level misalignments or shifts less than 3 pixels
+   Differences in dynamic content (like names, dates, IDs), unless these changes affect layout, visibility, or usability
+   Browser rendering quirks or image compression artifacts
+
+What to focus on and report:
+
+   Missing or Extra UI Elements:
+
+      Pay special attention to the presence or absence of navigation items, menus, and shortcuts in all navigation panels or shortcut menus.
+      Clearly call out any such differences.
+      Report if any buttons, menus, or sections are present in one screenshot but not the other.
+
+   Layout and Structure:
+
+      Only report clear, user-noticeable layout changes (major alignment issues, sections missing, overlapping or hidden elements).
+
+   Appearance and Style:
+
+      Only report significant color or style changes that impact usability or branding (not subtle shades).
+
+   Accessibility:
+
+      Note any changes that reduce readability, accessibility, or navigability.
+
+For each significant difference, provide output in the following table format:
+
+- UI Area/Element Affected
+- Type of Issue   
+- Severity 
+- Recommendation  
+
+If there are no user-noticeable or business-impacting UI/UX differences, respond only with:
+No significant UI/UX differences found. Navigation menus and all key user interface elements are consistent.
+
+Be strict—report only differences that would matter to a real user or business stakeholder.
+
+Do not include or mention differences in dynamic content (such as lead names, phone numbers, or dates) unless they impact layout or readability.
+
+After analyzing and listing the differences in the specified table format:
+
+   - Generate a complete, minimal, and readable HTML file named visual-regression-report.html that contains the results table (or the no-differences message, if appropriate).
+
+   - The HTML should include a styled table with columns:
+   "UI Area/Element Affected", "Type of Issue", "Severity", "Recommendation".
+
+   - If there are no significant differences, the HTML should only display:
+   "No significant UI/UX differences found. Navigation menus and all key user interface elements are consistent."
+
+Also generate a Node.js script (named, for example, open-report.js) that will:
+
+   - Write the HTML code to visual-regression-report.html
+
+   - Open the report in the default browser on any major OS (Windows, macOS, Linux)
+
+   - The script should be ready to use with a simple node open-report.js command
+
+   - Ensure both the HTML and script are outputted as separate, copy-pasteable code blocks.
+
+   - Do not output any additional commentary—just the HTML and the Node.js script.

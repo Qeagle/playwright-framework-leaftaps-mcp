@@ -47,7 +47,7 @@ An enterprise-grade, modular Playwright test automation framework following the 
 npm install
 # or
 yarn install
-
+```
 ---
 
 ## ▶️ Running Tests
@@ -56,11 +56,13 @@ yarn install
 
 ```bash
 npx playwright test tests/smoke/create-lead.spec.ts
-
+```
 
 ## Run a test in headed mode (debugging)
-npx playwright test tests/smoke/create-lead.spec.ts --headed
 
+```bash
+npx playwright test tests/smoke/create-lead.spec.ts --headed
+```
 
 
 

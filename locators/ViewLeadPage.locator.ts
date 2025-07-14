@@ -1,0 +1,22 @@
+export const ViewLeadPageLocators = {
+  leadId: '#viewLead_leadId_sp',
+  companyName: '#viewLead_companyName_sp',
+  firstName: '#viewLead_firstName_sp',
+  lastName: '#viewLead_lastName_sp',
+  firstNameLocal: '#viewLead_firstNameLocal_sp',
+  lastNameLocal: '#viewLead_lastNameLocal_sp',
+  salutation: '#viewLead_personalTitle_sp',
+  birthDate: '#viewLead_birthDate_sp',
+  department: '#viewLead_departmentName_sp',
+  annualRevenue: '#viewLead_annualRevenue_sp',
+  industry: '#viewLead_industryEnumId_sp',
+  ownership: '#viewLead_ownershipEnumId_sp',
+  description: '#viewLead_description_sp',
+  importantNote: '#viewLead_importantNote_sp',
+  phoneNumber: '#viewLead_primaryPhoneNumber_sp',
+  email: '#viewLead_primaryEmail_sp',
+  // Action buttons/links
+  editButton: 'a:has-text("Edit")',
+  deleteButton: 'a:has-text("Delete")',
+  duplicateButton: 'a:has-text("Duplicate Lead")',
+};
